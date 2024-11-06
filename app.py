@@ -210,8 +210,3 @@ def dashboard():
         return render_template_string(dashboard_page_html, username=username)
     return redirect(url_for('login'))
 
-# Run Flask in a separate thread
-def run_flask():
-    app.run(port=5023, debug=False, use_reloader=False)
-
-    run_flask()
