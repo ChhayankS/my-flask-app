@@ -214,9 +214,4 @@ def dashboard():
 def run_flask():
     app.run(port=5023, debug=False, use_reloader=False)
 
-if __name__ == "__main__":
-    # Run Flask in a separate thread
-    def run_flask():
-        app.run(port=5021, debug=False, use_reloader=False)
-
     run_flask()
